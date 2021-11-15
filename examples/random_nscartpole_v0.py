@@ -1,7 +1,7 @@
 import gym
 import dyna_gym.envs.nscartpole_v0
 import dyna_gym.agents.my_random_agent as ra
-import PIL
+import PIL.Image
 
 ### Parameters
 env = gym.make('NSCartPole-v0')
