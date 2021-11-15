@@ -1,6 +1,7 @@
 import gym
 import dyna_gym.envs.nscartpole_v0
 import dyna_gym.agents.my_random_agent as ra
+import PIL
 
 ### Parameters
 env = gym.make('NSCartPole-v0')
@@ -10,6 +11,7 @@ verbose = False
 
 ### Run
 env.reset()
+PIL.Image.fromarray(env.render())
 done = False
 for ts in range(timesteps):
     __, __, done, __ = env.step(agent.act(0,0,0))
